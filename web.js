@@ -4,7 +4,12 @@ var app = express.createServer(express.logger());
 
 
 //var stringOutput = fs.readFileSync('index.html','ascii');
-var stringOutput= 'Helo World2!';
+var stringOutput = '';
+fs.readFileSync('./index.html', function(err, data){
+    if (err) throw err;
+    stringOutput=(data.toString());
+}
+//var stringOutput= 'Helo World2!';
 
 app.get('/', function(request, response) {
  // response.send('Hello World2!');
