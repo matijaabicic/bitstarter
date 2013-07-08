@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
  // response.send('Hello World2!');
-    response.sendfile('index.html');
+    response.render('index.html');
 });
 
 var port = process.env.PORT || 5000;
