@@ -4,10 +4,11 @@ var app = express.createServer(express.logger());
 
 
 //var stringOutput = fs.readFileSync('index.html','ascii');
-//var stringOutput = '';
+var stringOutput = '';
 fs.readFileSync('./index.html', function(err, data){
     if (err) throw err;
-    console.log(data);
+    stringOutput = data.toString('utf8');
+//console.log(data);
 }
 var stringOutput= 'Helo World2!';
 
