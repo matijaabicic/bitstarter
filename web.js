@@ -2,15 +2,17 @@ var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
 
-
-//var stringOutput = fs.readFileSync('index.html','ascii');
-var stringOutput = '';
-fs.readFileSync('./index.html', 'utf8', function(err, data){
-    if (err) throw err;
-    stringOutput = data.toString('utf8');
-//console.log(data);
+var stringOutput = "";
+function readContent(callback) {
+    fs.readFile("./index.html", function (err, content) {
+        if (err) return callback(err)
+        callback(content)
+    })
 }
-var stringOutput= 'Helo World2!';
+
+readContent(function (content) {
+    stringOutput = content.toString();
+})
 
 app.get('/', function(request, response) {
  // response.send('Hello World2!');
