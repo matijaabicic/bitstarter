@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 
 //var stringOutput = fs.readFileSync('index.html','ascii');
 var stringOutput = '';
-fs.readFileSync('./index.html', function(err, data){
+fs.readFileSync('./index.html', 'utf8', function(err, data){
     if (err) throw err;
     stringOutput = data.toString('utf8');
 //console.log(data);
