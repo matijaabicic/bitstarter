@@ -109,7 +109,7 @@
     })();
     </script>
     <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-    
+
 </head>
 
 <body>
@@ -129,7 +129,7 @@
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a>
                         </li>
-                        <li><a href="#about">About</a>
+                        <li><a href="#register">Register</a>
                         </li>
                         <li><a href="#contact">Contact</a>
                         </li>
@@ -161,32 +161,37 @@
             </div>
         </div>
         <!-- Begin MailChimp Signup Form -->
+        <a name="register"></a>
+        <div class="row-fluid heading">
         <div align="center">
-            <div class="mailchimp" align="center" style="width: 30%" align="center">
-                <form action="http://tumblr.us7.list-manage.com/subscribe/post?u=57001329191ed1b638ed13ac6&amp;id=04f2219074" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <h2>Drop us your email to be notified when our private Beta is available</h2>
-                    <div class="mc-field-group">
-                        <label for="mce-EMAIL">Email Address
-                            <span class="asterisk">*</span>
-                        </label>
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                    </div>
-                    <div class="mc-field-group">
-                        <label for="mce-ZIP">ZIP Code</label>
-                        <input type="text" value="" name="ZIP" class="" id="mce-ZIP">
-                    </div>
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;">
-                        <input type="text" name="b_57001329191ed1b638ed13ac6_04f2219074" tabindex="-1" value="">
-                    </div>
-                    <div class="clear" align="center">
-                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                    </div>
-                </form>
+            <div class="span12">
+                <div class="mailchimp" align="center">
+                    <form action="http://tumblr.us7.list-manage.com/subscribe/post?u=57001329191ed1b638ed13ac6&amp;id=04f2219074" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <h2>Drop us your email to be notified when our private Beta is available</h2>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address
+                                <span class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-ZIP">ZIP Code</label>
+                            <input type="text" value="" name="ZIP" class="" id="mce-ZIP">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_57001329191ed1b638ed13ac6_04f2219074" tabindex="-1" value="">
+                        </div>
+                        <div class="clear" align="center">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
 
@@ -402,68 +407,13 @@
         </script>
         <!--End mc_embed_signup-->
         <div class="row-fluid pitch">
-            <div class="span5 offset1 video">
-                <!-- <img class="img-polaroid" src="http://placehold.it/480x300"> -->
-                <img src="./swaplyB.png">
-            </div>
-
             <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-            <div class="span5 actions">
-                <div class="span8 offset2">
-                    <div class="statistics">
-                        <div class="span4">
-                            <!-- linediv-l and linediv-r give dividing lines that look
-								different in horizontal and vertical layouts, illustrating
-								media queries. -->
-                            <div class="linediv-l">
-                                <h3>0</h3>
-                                <p>backers</p>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="linediv-c">
-                                <h3>$0</h3>
-                                <p>of $220,000</p>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="linediv-r">
-                                <h3>100</h3>
-                                <p>days left</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span10 offset1">
-                    <!-- Bootstrap progress bar -->
-                    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-                    <div class="thermometer progress active">
-                        <div class="bar bar-success" style="width: 2%;"></div>
-                        <div class="bar bar-warning" style="width: 98%;"></div>
-                    </div>
-                </div>
-                <div class="span6 offset3 order">
-                    <!-- Standard Bootstrap button. -->
-                    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-                    <!--<button class="btn btn-success btn-large">Pre-register</button>-->
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_donations">
-                        <input type="hidden" name="business" value="matija.abicic@gmail.com">
-                        <input type="hidden" name="lc" value="US">
-                        <input type="hidden" name="item_name" value="Swap.ly">
-                        <input type="hidden" name="item_number" value="Crowdfunder heroku">
-                        <input type="hidden" name="no_note" value="0">
-                        <input type="hidden" name="currency_code" value="USD">
-                        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-
-                </div>
-                <div class="span8 offset2 social">
+            <div class="span12 actions">
+                <div class="span12 offset2 social">
                     <!-- Social buttons are not included in default Bootstrap. -->
                     <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-                    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+                    <a href="https://www.twitter.com/swaplyapp" target="_blank">
+                    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button></a>
                     <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
                 </div>
             </div>
@@ -475,9 +425,10 @@
         <!-- http://placehold.it -->
         <div class="row-fluid section1">
             <div class="span5 offset1 asset">
-                <img class="img-polaroid" src="/map.jpg">
+                <img src="/map.jpg">
             </div>
             <div class="span5 copy">
+            <h1>Localy grown.</h1><br/>
                 <p>
                     We are local ! Swaply offers quick and easy way to find out what goods and services are available and wanted in your area. Instantly connect with other Swaplers</p>
             </div>
@@ -494,8 +445,8 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-										What does FAQ stand for?
-									</a>
+                                        What does FAQ stand for?
+                                    </a>
                         </div>
                         <div id="collapseOne" class="accordion-body collapse">
                             <div class="accordion-inner">
@@ -506,7 +457,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-										How can you make shipping free? That will cost you a lot of money                 </a>
+                                        How can you make shipping free? That will cost you a lot of money                 </a>
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse">
                             <div class="accordion-inner">
@@ -523,8 +474,8 @@
         <div class="row-fluid footer">
             <div class="span12">
                 <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-							By-SA 3.0
-						</a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
+                            By-SA 3.0
+                        </a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
             </div>
         </div>
     </div>
